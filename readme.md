@@ -9,6 +9,10 @@
   <a href="#-mostre-seu-suporte">Suporte</a>
 </p>
 
+<p align="center">
+    <img src="./FruitMarket.Client/src/assets/fruit-market-home.png" alt="demo" height="395">
+</p>
+
 ## 🧑‍💻 Tecnologias
 * **Backend**
   * C#
@@ -37,6 +41,7 @@ Feito isso, rodamos o frontend em FruitMarket.Client instalando as dependências
 
 - Instalar as dependendências:
 ```
+cd FruitMarket.Client
 yarn
 ```
 
