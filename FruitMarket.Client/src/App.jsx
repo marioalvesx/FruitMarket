@@ -16,7 +16,10 @@ function App() {
 
   const [selectedFruit, setSelectedFruit] = useState({
     id: '',
-    description: ''
+    description: '',
+    valueA: '',
+    valueB: '',
+    result: ''
   });
 
   const selectFruit = (fruit, option) => {
@@ -80,6 +83,7 @@ function App() {
           if (fruit.id === selectedFruit.id){
             fruit.valueA = responseData.valueA;
             fruit.valueB = responseData.valueB;
+            fruit.result = responseData.result;
           }
         });
         openCloseModalMultiply();
@@ -100,7 +104,7 @@ function App() {
             fruit.valueB = responseData.valueB;
           }
         });
-        openCloseModalMultiply();
+        openCloseModalDivide();
       }).catch((error) => {
         console.log(error);
       });
@@ -121,7 +125,6 @@ function App() {
        <table className="table table-bordered">
         <thead>
           <tr>
-            <th>Id</th>
             <th>Description</th>
             <th>A</th>
             <th>B</th>
@@ -132,14 +135,13 @@ function App() {
         <tbody>
           {data.map(fruit => (
             <tr key = {fruit.Id}>
-              <td>{fruit.id}</td>
               <td>{fruit.description}</td>
               <td>{fruit.valueA}</td>
               <td>{fruit.valueB}</td>
               <td>{fruit.result}</td>
               <td>
                 <button className="btn btn-primary" onClick={() => selectFruit(fruit, "multiply")}>Multiply</button>
-                <button className="btn btn-danger">Delete</button>
+                <button className="btn btn-warning" onClick={() => selectFruit(fruit, "divide")}>Divide</button>
               </td>
             </tr>
           ))}
@@ -178,8 +180,8 @@ function App() {
             <input type="int" className="form-control" name="valueB"
             value={selectedFruit && selectedFruit.valueB} onChange={handleChange} />
             <label>Result: </label><br />
-            <input type="text" className="form-control" readOnly 
-            value={selectedFruit && selectedFruit.Result} /><br />
+            <input type="int" className="form-control" name="result" readOnly 
+            value={selectedFruit && selectedFruit.result} /><br />
           </div>
         </ModalBody>
         <ModalFooter> 
@@ -205,8 +207,8 @@ function App() {
             <input type="int" className="form-control" name="valueB"
             value={selectedFruit && selectedFruit.valueB} onChange={handleChange} />
             <label>Result: </label><br />
-            <input type="text" className="form-control" readOnly 
-            value={selectedFruit && selectedFruit.Result} /><br />
+            <input type="int" className="form-control" name="result" readOnly 
+            value={selectedFruit && selectedFruit.result} /><br />
           </div>
         </ModalBody>
         <ModalFooter> 
