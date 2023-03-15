@@ -1,0 +1,96 @@
+.fruit-container > h3, thead, tbody {
+  color: #ffffff;
+}
+
+.fruit-container {
+  width: 50rem;
+  max-width: 1200px;
+  padding: 0 25px;
+  padding-bottom: 18rem;
+  margin: 20px auto;
+}
+
+.fruit-container header{
+  display: flex;
+  align-items: center;
+}
+
+.fruit-container header span{
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+.fruit-container header span strong{
+  color: #f8f8f8;
+}
+
+.fruit-container header a{
+  width: 250px;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.fruit-container header button{    
+  border-radius: 5px;
+  border: 1px solid #DCDCE6;
+  margin-left: 25rem;
+  margin-top: 10rem;
+  display: block;
+  transition: border-color 0.5s;
+}
+
+.fruit-container header button:hover{
+  border-color: #201465;
+}
+
+.fruit-container h1 {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.fruit-container ul {
+  display: grid;
+  padding: 0 25px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 35px;
+  list-style: none;
+}
+
+.fruit-container ul li{
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.fruit-container ul li button {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  border: 0;
+  background: transparent;  
+}
+
+.fruit-container ul li button + button{
+  top: 50px;  
+}
+
+.fruit-container ul li button:hover{
+  opacity: 0.8;  
+}
+
+.fruit-container ul li strong{
+  display: block;
+  margin-bottom: 16px;
+  color: #41414D;
+}
+
+.fruit-container ul li p + strong{
+  margin-top: 32px;
+}
+
+.fruit-container ul li p {
+  color: #737380;
+  line-height: 21px;
+  font-size: 16px;
+}
