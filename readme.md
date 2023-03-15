@@ -26,7 +26,8 @@
 
 ## 💻 Projeto
 O Fruit Market é um projeto de gerenciamento de frutas onde é possível cadastrar uma lista de frutas, 
-exibir a lista completa de frutas, fazer as operações de multiplicação e divisão.
+exibir a lista completa de frutas, fazer as operações de multiplicação e divisão. 
+Para conseguir efetuar as operações de multiplicação e divisão basta criar uma fruta primeiramente pela opção **Add new Fruit**.
 Esse projeto é divido em backend, composto por uma API desenvolvida em C# e .NET Core, e frontend em React utilizando JavaScript com Vite.
 
 ## ⚛️ Como executar?
@@ -45,10 +46,11 @@ cd FruitMarket.Client
 yarn
 ```
 
-- Executar o cliente em frontend:
+- Executar o client que vai consumir a API:
 ```
 yarn dev
 ```
+Pronto, só acessar o localhost e a porta designada, com a API que fornece o backend rodando, que a aplicação estará rodando!
 
 <hr />
 
