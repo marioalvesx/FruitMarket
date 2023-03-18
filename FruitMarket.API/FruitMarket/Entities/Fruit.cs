@@ -33,9 +33,8 @@
             Description = description;
             ValueA = valueA;
             ValueB = valueB;
-            if(valueA > valueB || valueA == valueB)
-                Result = valueA / valueB;
-            else if(valueA < valueB) Result = valueB / valueA;
+
+            Result = valueA > valueB ? valueA / valueB : valueB / valueA;
 
             return Result;
         }
