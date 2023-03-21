@@ -7,7 +7,7 @@ import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import appLogo from './assets/WatermelonAmico.svg';
 
 function App() {
-  const baseURL = "https://localhost:7193/api/fruit-market"
+  const baseURL = "https://fruit-market-api.azurewebsites.net/api/fruit-market"
 
   const [data, setData] = useState([]);
   const [modalInclude, setModalInclude] = useState(false);

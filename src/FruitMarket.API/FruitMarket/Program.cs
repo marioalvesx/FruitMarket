@@ -14,7 +14,7 @@ namespace FruitMarket
             var connectionString = builder.Configuration.GetConnectionString("FruitMarket");
 
             builder.Services.AddDbContext<FruitMarketDbContext>(
-                o => o.UseSqlServer(connectionString)
+                o => o.UseInMemoryDatabase("FruitMarketDb")
             );
 
             builder.Services.AddControllers();
@@ -51,7 +51,7 @@ namespace FruitMarket
 
             app.UseCors(options =>
             {
-                options.WithOrigins("http://localhost:5173");
+                options.WithOrigins("https://fruit-market-frontend.vercel.app/");
                 options.AllowAnyMethod();
                 options.AllowAnyHeader();
             });
@@ -59,7 +59,6 @@ namespace FruitMarket
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
