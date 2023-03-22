@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./FruitMarket.Client/src/assets/WatermelonAmico.svg" width="190px"/>
+<img src="./src/FruitMarket.Client/src/assets/WatermelonAmico.svg" width="190px"/>
 </p>
 <h1 align="center"> Fruit Market </h1>
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-    <img src="./FruitMarket.Client/src/assets/fruit-market-home.png" alt="demo" height="395">
+    <img src="./src/FruitMarket.Client/src/assets/fruit-market-home.png" alt="demo" height="395">
 </p>
 
 ## 🧑‍💻 Tecnologias
