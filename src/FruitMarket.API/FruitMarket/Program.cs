@@ -14,7 +14,7 @@ namespace FruitMarket
             var connectionString = builder.Configuration.GetConnectionString("FruitMarket");
 
             builder.Services.AddDbContext<FruitMarketDbContext>(
-                o => o.UseInMemoryDatabase("FruitMarketDb")
+                o => o.UseSqlServer(connectionString)
             );
 
             builder.Services.AddControllers();
@@ -43,7 +43,7 @@ namespace FruitMarket
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsProduction())
+            if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
