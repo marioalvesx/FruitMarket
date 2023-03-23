@@ -19,6 +19,7 @@
   * .NET
   * SQL Server
   * Entity Framework 
+  * Docker
 * **Frontend**
   * React
   * Reactstrap
@@ -29,6 +30,9 @@ O Fruit Market é um projeto de gerenciamento de frutas onde é possível cadast
 exibir a lista completa de frutas, fazer as operações de multiplicação e divisão. 
 Para conseguir efetuar as operações de multiplicação e divisão basta criar uma fruta primeiramente pela opção **Add new Fruit**.
 Esse projeto é divido em backend, composto por uma API desenvolvida em C# e .NET Core, e frontend em React utilizando JavaScript com Vite.
+
+## 🛳️ Docker-Hub
+Esse projeto pode ser encontrado no Docker-Hub também aqui: https://hub.docker.com/repository/docker/marioalvess/docker-aspnet-fruitmarket-api/general
 
 ## ⚛️ Como executar?
 Primeiramente, é essencial deixar a **API** executando em segundo plano. Para isso, antes deve-se configurar o banco de dados com o seu servidor 
