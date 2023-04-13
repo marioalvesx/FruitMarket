@@ -51,7 +51,7 @@ namespace FruitMarket
 
             app.UseCors(options =>
             {
-                options.WithOrigins("https://fruit-market-frontend.vercel.app/");
+                options.WithOrigins("http://localhost:5173");
                 options.AllowAnyMethod();
                 options.AllowAnyHeader();
             });

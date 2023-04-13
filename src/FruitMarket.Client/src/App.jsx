@@ -7,13 +7,13 @@ import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import appLogo from './assets/WatermelonAmico.svg';
 
 function App() {
-  const baseURL = ""
+  const baseURL = "http://localhost:5159/api/fruit-market"
 
   const [data, setData] = useState([]);
   const [modalInclude, setModalInclude] = useState(false);
   const [modalMultiply, setModalMultiply] = useState(false);
   const [modalDivide, setModalDivide] = useState(false);
-
+ 
   const [selectedFruit, setSelectedFruit] = useState({
     id: '',
     description: '',
